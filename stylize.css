@@ -1,0 +1,896 @@
+ nav{
+    height: 10vh;
+    display: flex;
+   width: 100%;
+   justify-content: space-between;
+   align-items: center;
+   box-shadow:  27px 27px 54px #635f5f56,
+                -27px -27px 54px #ffffff;
+}
+body{
+    overflow-x: hidden;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 6vw;
+ 
+ }
+ nav img{
+    height: 5vh;
+    object-fit: contain;
+}
+nav .left{
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+
+}
+nav .left a{
+    font-size: .9vw;
+    text-decoration: none;
+    color: #000;
+    font-family: Lato;
+    text-transform: uppercase;
+}
+ nav .right{
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    width: 100%;
+    justify-content: end;
+    padding-right: 4vw;
+
+}
+nav .right a{
+    font-size: 1vw;
+    text-decoration: none;
+    color: #000;
+    
+    text-transform: uppercase;
+}
+.right i{
+   background-color: black;
+   border-radius: 1vw;
+   position: absolute;
+  cursor: pointer;
+  right: 20%;
+}
+
+nav .shops span{
+    position: absolute;
+    top: 3%;
+    background-color: black;
+    text-align: center;
+    padding: .2vw;
+    color: #fff;
+    width: .5vw;
+    right: 2%;
+    height: 1vh;
+    border-radius: 50%;
+    
+}
+.page1{
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #F5F7F9;
+}
+.elem1{
+    height: 90%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+   
+    width: 100%;
+}
+.elem1 .elem2{
+    height: 80%;
+    width: 30%;
+    position: absolute;
+    left: 20%;
+    
+}
+.elem1 .elem2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.text{
+    position: relative;
+    top: 40%;
+    left: 53%;
+    display: inline-block;
+}
+.text h2{
+    font-size: 2vw;
+    font-weight: 100;
+    padding-top: 1vw;
+}
+.text h6{
+    font-size: 1.2vw;
+    padding-top: 1vw;
+}
+.text #para, #para1,#para2,#para3,#para4,#para5,#para6,#para7,#para8,#para9{
+    font-size: 1.6vw;
+    width: 45%;
+    padding-top: 1vw;
+   
+}
+
+.text #cart{
+   margin-top: 1vw;
+   padding: .5vw 5vw;
+   font-size: 1vw;
+   background-color: rgba(0, 0, 255, 0.779);
+   color: #fff;
+   cursor: pointer;
+   text-transform: uppercase;
+}
+.check-cart{
+    height: 80vh;
+    width: 30vw;
+    position: absolute;
+    z-index: 99;
+    right: -100%;
+    background-color: #ffffffff;
+    
+    box-shadow: 0px 0px 80px rgb(0, 0, 0),inset
+    20px 20px 60px white;
+    transition: .5s all ease-in-out;
+  
+}
+.opacity{
+  opacity: .5;
+}
+.check-cart.showw{
+    right: 1%;
+}
+.check-cart.hide{
+    right: 0;
+}
+.check-cart .top{
+    display: flex;
+    padding: 1vw;
+    align-items: center;
+
+    justify-content: space-between;
+   
+    border-bottom: 1px solid rgb(44, 41, 41);
+}
+.top h4{
+    
+    text-transform: uppercase;
+
+}
+.top button{
+   cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1.2vw;
+}
+.text1{
+    display: flex;
+    height: 70%;
+    width: 100%;
+   justify-content: center;
+    align-items: center;
+    margin-left: 4vw;
+    
+}
+.text1 #text2{
+    color: rgba(128, 128, 128, 0.711);
+    text-transform: uppercase;
+    padding-right: 8vw;
+    white-space: nowrap;
+   
+}
+.veiw #cross{
+    background: none;
+  
+    margin-left: 12vw;
+    font-size: .8vw;
+    color: grey;
+font-family: grands;
+    cursor: pointer;
+   
+  border: none;
+    display: none;
+}
+.check-cart .subtotal{
+   display: flex;
+align-items: center;
+padding: 0px 2vw;
+opacity: 0;
+  justify-content: space-between;
+   height: 4vh;
+    position: relative;
+    bottom: 3%;
+    
+    border: 1px solid black;
+}
+.subtotal #total{
+    display: none;
+    
+}
+ .continue{
+    background-color:#0075BE ;
+    height: 6%;
+   width: 100%;
+   cursor: pointer;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+
+}
+.shops{
+    display: flex;
+    position: relative;
+    right: 10%;
+}
+.continue #continue{
+    font-size: 1em;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: none;
+    
+    color: #fff;
+}
+
+@media (max-width:468px) {
+    
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 6vw;
+ 
+ }
+ nav img{
+    height: 2vh;
+    object-fit: contain;
+}
+/* nav .left{
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+    
+   background-color: rebeccapurple;
+
+}
+nav .left a{
+    font-size: 2vw;
+    text-decoration: none;
+    color: #000;
+    font-family: Lato;
+    text-transform: uppercase;
+} */
+ nav .right{
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+  
+    width: 100%;
+  position: relative;
+  right: 40%;
+    padding-right: 8vw;
+
+}
+nav .right a{
+    font-size: 4vw;
+    text-decoration: none;
+    color: #000;
+
+    text-transform: uppercase;
+}
+
+nav .shops{
+    display: flex;
+    position: relative;
+    right: 1%;
+     align-items: center;
+}
+
+
+nav .shops i{
+    background-color: rgba(0, 0, 0, 0.951);
+    font-size: 5.5vw;
+    position: absolute;
+   cursor: pointer;
+   border-radius: 10px;
+ }
+ nav .shops span{
+ display: block;
+ padding: 1.5vw;
+ position: absolute;
+top: -5vw;
+width: 2vw;
+left: -4vw;
+text-align: center;
+ }
+
+ nav .shops h6{
+    font-size: 2.4vw;
+    position: absolute;
+left: 40%;
+bottom: 20%;
+  
+   
+ }
+  
+ .page1{
+   height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+   
+    align-items: center;
+    /* background-color: #F5F7F9; */
+}
+.elem1{
+    height: 50%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+   
+    width: 100%;
+}
+.elem1 .elem2{
+    height: 45%;
+    width: 40%;
+    position: absolute;
+    left: 7%;
+   
+   
+    
+}
+.elem1 .elem2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+   
+    
+}
+.text{
+    position: relative;
+    top: 76.5%;
+    left: 27%;
+  width: 55%;
+    display: inline-block;
+}
+.text h2{
+    font-size:4vw;
+    font-weight: 100;
+    padding-top: 1vw;
+}
+.text h6{
+    font-size: 3vw;
+    padding-top: 1vw;
+}
+.text #para, #para1,#para2,#para3,#para4,#para5,#para6,#para7,#para8,#para9{
+    font-size: 3vw;
+    width: 90%;
+    padding-top: 1vw;
+   
+}
+.text p{
+    font-size: 4vw;
+}
+
+.text #cart{
+    margin-top: 1.5vw;
+    padding: .8vw 8vw;
+    font-size: 1.6vw;
+    background-color: rgba(0, 0, 255, 0.779);
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+ }
+
+ .check-cart{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 99;
+    right: -100%;
+    background-color: #ffffffff;
+    
+    box-shadow: 0px 0px 80px rgb(0, 0, 0),inset
+    20px 20px 60px white;
+    transition: .5s all ease-in-out;
+  
+}
+
+
+.check-cart .top{
+    display: flex;
+    padding: 3vw;
+    align-items: center;
+
+    justify-content: space-between;
+   
+    border-bottom: 1px solid rgb(44, 41, 41);
+}
+.top h4{
+    
+    text-transform: uppercase;
+
+}
+.top button{
+   cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 5vw;
+}
+
+.veiw #cross{
+    background: none;
+  
+    margin-left: 22vw;
+    font-size: 4vw;
+    color: grey;
+font-family: grands;
+    cursor: pointer;
+   
+  border: none;
+    display: none;
+}
+.veiw{
+   
+    padding: 0px 5vw;
+    left: 5%;
+    position: relative;
+}
+.veiw #dnk{
+    font-size: 3vw;
+    margin-top: 2vw;
+    margin-left: 5vw;
+
+}
+.veiw #para{
+    font-size: 3vw;
+    margin-top: 5vw;
+    margin-left: 15vw;
+}
+}
+
+@media (min-width:469px) and (max-width:568px) {
+    
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0px 6vw;
+     
+     }
+     nav img{
+        height: 3vh;
+        object-fit: contain;
+    }
+    /* nav .left{
+        display: flex;
+        align-items: center;
+        gap: 1.5vw;
+        
+       background-color: rebeccapurple;
+    
+    }
+    nav .left a{
+        font-size: 2vw;
+        text-decoration: none;
+        color: #000;
+        font-family: Lato;
+        text-transform: uppercase;
+    } */
+     nav .right{
+        display: flex;
+        align-items: center;
+       justify-content: space-between;
+      
+        width: 100%;
+      position: relative;
+      right: 40%;
+        padding-right: 8vw;
+    
+    }
+    nav .right a{
+        font-size: 4vw;
+        text-decoration: none;
+        color: #000;
+    
+        text-transform: uppercase;
+    }
+    
+    nav .shops{
+        display: flex;
+        position: relative;
+        right: 1%;
+         align-items: center;
+    }
+    
+    
+    nav .shops i{
+        background-color: rgba(0, 0, 0, 0.951);
+        font-size: 5.5vw;
+        position: absolute;
+       cursor: pointer;
+       border-radius: 10px;
+     }
+     nav .shops span{
+     display: block;
+     padding: 1.5vw;
+     position: absolute;
+    top: -5vw;
+    width: 2vw;
+    left: -4vw;
+    text-align: center;
+     }
+    
+     nav .shops h6{
+        font-size: 2.4vw;
+        position: absolute;
+    left: 40%;
+    bottom: 20%;
+      
+       
+     }
+      
+     .page1{
+       height: 100vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+       
+        align-items: center;
+        /* background-color: #F5F7F9; */
+    }
+    .elem1{
+        height: 50%;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+       
+        width: 100%;
+    }
+    .elem1 .elem2{
+        height: 45%;
+        width: 40%;
+        position: absolute;
+        left: 7%;
+       
+       
+        
+    }
+    .elem1 .elem2 img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        
+    }
+    .text{
+        position: relative;
+        top: 76.5%;
+        left: 26%;
+      width: 55%;
+        display: inline-block;
+    }
+    .text h2{
+        font-size:4vw;
+        font-weight: 100;
+        padding-top: 1vw;
+    }
+    .text h6{
+        font-size: 3vw;
+        padding-top: 1vw;
+    }
+    .text #para, #para1,#para2,#para3,#para4,#para5,#para6,#para7,#para8,#para9{
+        font-size: 3vw;
+        width: 90%;
+        padding-top: 1vw;
+       
+    }
+    .text p{
+        font-size: 3vw;
+    }
+    
+    .text #cart{
+        margin-top: 1.7vw;
+        padding: 1vw 10vw;
+        font-size: 1.6vw;
+        background-color: rgba(0, 0, 255, 0.779);
+        color: #fff;
+        cursor: pointer;
+        text-transform: uppercase;
+     }
+    
+     .check-cart{
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        z-index: 99;
+        right: -100%;
+        background-color: #ffffffff;
+        
+        box-shadow: 0px 0px 80px rgb(0, 0, 0),inset
+        20px 20px 60px white;
+        transition: .5s all ease-in-out;
+      
+    }
+    
+    
+    .check-cart .top{
+        display: flex;
+        padding: 3vw;
+        align-items: center;
+    
+        justify-content: space-between;
+       
+        border-bottom: 1px solid rgb(44, 41, 41);
+    }
+    .top h4{
+        
+        text-transform: uppercase;
+    
+    }
+    .top button{
+       cursor: pointer;
+        background: none;
+        border: none;
+        font-size: 5vw;
+    }
+    
+    .veiw #cross{
+        background: none;
+      
+        margin-left: 22vw;
+        font-size: 4vw;
+        color: grey;
+    font-family: grands;
+        cursor: pointer;
+       
+      border: none;
+        display: none;
+    }
+    .veiw{
+       
+        padding: 0px 5vw;
+        left: 5%;
+        position: relative;
+    }
+    .veiw #dnk{
+        font-size: 3vw;
+        margin-top: 2vw;
+        margin-left: 5vw;
+    
+    }
+    .veiw #para{
+        font-size: 3vw;
+        margin-top: 5vw;
+        margin-left: 15vw;
+    }
+
+
+}
+
+@media (min-width:569px) and (max-width:768px) {
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0px 6vw;
+     
+     }
+     nav img{
+        height: 4vh;
+        object-fit: contain;
+    }
+    /* nav .left{
+        display: flex;
+        align-items: center;
+        gap: 1.5vw;
+        
+       background-color: rebeccapurple;
+    
+    }
+    nav .left a{
+        font-size: 2vw;
+        text-decoration: none;
+        color: #000;
+        font-family: Lato;
+        text-transform: uppercase;
+    } */
+     nav .right{
+        display: flex;
+        align-items: center;
+       justify-content: space-between;
+      
+        width: 100%;
+      position: relative;
+      right: 40%;
+        padding-right: 8vw;
+    
+    }
+    nav .right a{
+        font-size: 4vw;
+        text-decoration: none;
+        color: #000;
+    
+        text-transform: uppercase;
+    }
+    
+    nav .shops{
+        display: flex;
+        position: relative;
+        right: 1%;
+         align-items: center;
+    }
+    
+    
+    nav .shops i{
+        background-color: rgba(0, 0, 0, 0.951);
+        font-size: 5.5vw;
+        position: absolute;
+       cursor: pointer;
+       border-radius: 10px;
+     }
+     nav .shops span{
+     display: block;
+     padding: 1.5vw;
+     position: absolute;
+    top: -5vw;
+    width: 2vw;
+    left: -4vw;
+    text-align: center;
+     }
+    
+     nav .shops h6{
+        font-size: 2.4vw;
+        position: absolute;
+    left: 40%;
+    bottom: 20%;
+      
+       
+     }
+      
+     .page1{
+       height: 100vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+       
+        align-items: center;
+        /* background-color: #F5F7F9; */
+    }
+    .elem1{
+        height: 50%;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+       
+        width: 100%;
+    }
+    .elem1 .elem2{
+        height: 45%;
+        width: 40%;
+        position: absolute;
+        left: 7%;
+       
+       
+        
+    }
+    .elem1 .elem2 img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        
+    }
+    .text{
+        position: relative;
+        top: 77%;
+        left: 27%;
+      width: 55%;
+        display: inline-block;
+    }
+    .text h2{
+        font-size:4vw;
+        font-weight: 100;
+        padding-top: 1vw;
+    }
+    .text h6{
+        font-size: 3vw;
+        padding-top: 1vw;
+    }
+    .text #para, #para1,#para2,#para3,#para4,#para5,#para6,#para7,#para8,#para9{
+        font-size: 3vw;
+        width: 90%;
+        padding-top: 1vw;
+       
+    }
+    .text p{
+        font-size: 3vw;
+    }
+    
+    .text #cart{
+        margin-top: 1.5vw;
+        padding: .8vw 8vw;
+        font-size: 1.6vw;
+        background-color: rgba(0, 0, 255, 0.779);
+        color: #fff;
+        cursor: pointer;
+        text-transform: uppercase;
+     }
+    
+     .check-cart{
+        height: 80vh;
+        width: 100%;
+        position: absolute;
+        z-index: 99;
+        right: -100%;
+        background-color: #ffffffff;
+        
+        box-shadow: 0px 0px 80px rgb(0, 0, 0),inset
+        20px 20px 60px white;
+        transition: .5s all ease-in-out;
+      
+    }
+    
+    
+    .check-cart .top{
+        display: flex;
+        padding: 3vw;
+        align-items: center;
+    
+        justify-content: space-between;
+       
+        border-bottom: 1px solid rgb(44, 41, 41);
+    }
+    .top h4{
+        
+        text-transform: uppercase;
+    
+    }
+    .top button{
+       cursor: pointer;
+        background: none;
+        border: none;
+        font-size: 5vw;
+    }
+    
+    .veiw #cross{
+        background: none;
+      
+        margin-left: 22vw;
+        font-size: 4vw;
+        color: grey;
+    font-family: grands;
+        cursor: pointer;
+       
+      border: none;
+        display: none;
+    }
+    .veiw{
+       
+        padding: 0px 5vw;
+        left: 5%;
+        position: relative;
+    }
+    .veiw #dnk{
+        font-size: 3vw;
+        margin-top: 2vw;
+        margin-left: 5vw;
+    
+    }
+    .veiw #para{
+        font-size: 3vw;
+        margin-top: 5vw;
+        margin-left: 15vw;
+    }
+}
